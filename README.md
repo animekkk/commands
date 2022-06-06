@@ -20,9 +20,10 @@ Only `@CommandName` annotation is required, the rest is optional.
 
 There is also a `PlayerCommand`, for only-players commands.
 Remember that it can only be used by **player**.
+
 ```java
 @CommandName("testplayer")
-public class TestPlayerCommand extends Command {
+public class TestPlayerCommand extends PlayerCommand {
 
     @Override
     public void onExecute(CommandSender sender, String[] args) {
